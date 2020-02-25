@@ -42,6 +42,8 @@ group :development, :test do
   gem 'omniauth'
   gem 'omniauth-github'
   gem 'rspec-rails'
+  gem 'thin'
+  gem 'pry'
 end
 
 group :development do

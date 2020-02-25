@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root 'welcome#home'
-  match '/auth/:github/callback', to: 'sessions#create', via: [:get, :post]
+  get '/auth/:provider/callback', to: 'sessions#create'
+  #match '/auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
 end
